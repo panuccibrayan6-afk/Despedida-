@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Despedida...</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+
+    min-height: 100vh;
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: radial-gradient(circle at 20% 30%, #3a0ca3, transparent 40%),
+                radial-gradient(circle at 80% 70%, #4361ee, transparent 40%),
+                radial-gradient(circle at 50% 50%, #000000, #000000 80%);
+}
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+button {
+    margin: 40px 0;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #7209b7;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #560bad;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div id="despedida">
+    <h1>Eu preciso falar uma coisa...</h1>
+    <p>
+        Eu fiquei pensando muito nesses últimos dias...<br><br>
+
+        Não foi uma decisão fácil, de verdade.<br>
+        Eu gosto muito de fazer sites, de aprender, de criar coisas novas...<br><br>
+
+        Mas parece que algo mudou.<br>
+        Não sei explicar direito...<br><br>
+
+        Talvez seja hora de parar...<br>
+        Ou talvez eu só esteja confuso.<br><br>
+
+        Obrigado por tudo até aqui...
+    </p>
+
+    <button onclick="revelar()">Continuar...</button>
+</div>
+
+<div id="surpresa" class="hidden">
+    <h1>😂 CALMA AÍ!!!</h1>
+    <p>
+        KKKKKKK você caiu direitinho né?? 🤣<br><br>
+
+        Achou mesmo que eu ia parar?<br>
+        Nem ferrando 😎🔥<br><br>
+
+        Eu só vou parar de fazer site...<br>
+        quando eu morrer 💻😤<br><br>
+
+        Isso aqui é só o começo 🚀
+    </p>
+
+    <button onclick="final()">Última coisa...</button>
+</div>
+
+<div id="final" class="hidden">
+    <h1>Agora é sério 😏</h1>
+    <p>
+        Quero que você me mande um áudio AGORA 🎤<br><br>
+
+        Falando qual foi sua reação quando leu isso 🤣<br><br>
+
+        Você ficou:<br><br>
+
+        😢 Triste<br>
+        😡 Bravo<br>
+        🤨 Desconfiado<br>
+        🤡 Caiu direitinho mesmo KKKK<br><br>
+
+        Vou ficar esperando 👀
+    </p>
+</div>
+
+<script>
+function revelar() {
+    document.getElementById("despedida").classList.add("hidden");
+    document.getElementById("surpresa").classList.remove("hidden");
+    window.scrollTo(0,0);
+}
+
+function final() {
+    document.getElementById("surpresa").classList.add("hidden");
+    document.getElementById("final").classList.remove("hidden");
+    window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>
