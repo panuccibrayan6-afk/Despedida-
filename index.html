@@ -2,6 +2,10 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+
+<!-- 👇 MUITO IMPORTANTE PRA CELULAR -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Despedida...</title>
 
 <style>
@@ -23,20 +27,22 @@ body {
                 radial-gradient(circle at 50% 50%, #000000, #000000 80%);
 }
 
+/* 📱 TEXTO RESPONSIVO */
 h1 {
-    font-size: 32px;
+    font-size: clamp(28px, 6vw, 42px);
 }
 
 p {
-    font-size: 18px;
+    font-size: clamp(18px, 4.5vw, 22px);
     max-width: 600px;
     line-height: 1.6;
 }
 
+/* 🔘 BOTÃO RESPONSIVO */
 button {
     margin: 40px 0;
     padding: 15px 25px;
-    font-size: 18px;
+    font-size: clamp(16px, 4vw, 20px);
     border: none;
     border-radius: 12px;
     cursor: pointer;
